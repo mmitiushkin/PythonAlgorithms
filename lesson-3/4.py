@@ -1,4 +1,5 @@
 # 4. Определить, какое число в массиве встречается чаще всего.
+
 import random
 
 lst = [random.randint(0, 100) for _ in range(100)]

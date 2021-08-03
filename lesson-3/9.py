@@ -11,13 +11,13 @@ for i in range(n):
     a.append(b)
     print()
 
+min_lst = []
 for i in range(n):
-    print(f'--', end=' ')
-print()
-
-for i in range(n):
-    s = 0
+    s = []
     for j in range(n):
-        s += a[j][i]
-    print(s, end=' ')
+        s.append(a[j][i])
+    min_lst.append(min(s))
+
+
+print(f"Максимальный элемент среди минимальных элементов столбцов матрицы - {max(min_lst)}")
 
